@@ -46,18 +46,6 @@ Follow the instructions below to download and run the project locally.
 -   Store and manage created QR codes using localStorage.
 -   Download QR codes as JPG files.
 
-### Tags
-
-Consider using the following tags for your project:
-
--   QR Code
--   Generator
--   React
--   Vite
--   Web Application
--   localStorage
--   JavaScript
-
 ### License
 
-This project is licensed under the [MIT License](https://chat.openai.com/LICENSE).
+This project is licensed under the [MIT License](https://github.com/YSelim0/magiqr/blob/main/LICENSE).
