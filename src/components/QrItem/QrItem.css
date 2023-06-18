@@ -1,0 +1,95 @@
+.qr-item {
+    width: 100%;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 20px;
+    background-color: #526D82;
+    border-radius: 5px;
+}
+  
+.qr-item>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.qr-item .details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+  
+.qr-item h3 a {
+    display: flex;
+    align-items: center;
+    color: #DDE6ED;
+}
+  
+.qr-item h3 a img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px 0px 0px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+  
+.details .description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.qr-item .edit {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+
+.qr-item .edit a {
+    width: fit-content;
+}
+  
+.qr-item .edit .delete-btn {
+    width: fit-content;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9DB2BF;
+    color: black;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+  
+.qr-item .edit .delete-btn:hover {
+    background-color: #DDE6ED;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .qr-item {
+      grid-template-columns: 1fr;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .qr-item .details .description {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    
+    .qr-item img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  
+    .qr-item .edit {
+      align-items: center;
+    }
+  
+}

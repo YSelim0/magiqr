@@ -1,0 +1,94 @@
+.container {
+  padding-inline: 450px;
+}
+
+.input-row {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  column-gap: 20px;
+  margin-block: 50px;
+}
+
+.input-row input {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #526D82;
+  color: #DDE6ED;
+  transition: all .1s ease-in-out;
+}
+
+.input-row input::placeholder {
+  color: #DDE6ED;
+}
+
+.input-row input:focus {
+  background-color: #63849e;
+}
+
+.input-row button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9DB2BF;
+  color: black;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.input-row button:hover {
+  background-color: #DDE6ED;
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1550px) {
+  
+  .container {
+    padding-inline: 250px;
+  }
+
+}
+
+@media only screen and (max-width: 1150px) {
+  
+  .container {
+    padding-inline: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .container {
+    padding-inline: 25px;
+  }
+  
+  .input-row {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    height: auto;
+  }
+  
+  .input-row button {
+    width: 100%;
+  }
+  
+  .content-container {
+    row-gap: 10px;
+  }
+
+}
